@@ -7,7 +7,10 @@ that modifies the senoidal frequency.
 
 '''
 void frec_cb( const std_msgs::UInt16& cmd_msg){
+
    frequency=cmd_msg.data; //set frequency   
+   
 }
+
 ros::Subscriber<std_msgs::UInt16> sub("frec", frec_cb);
 '''
