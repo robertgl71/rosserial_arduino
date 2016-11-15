@@ -5,12 +5,9 @@ that modifies the senoidal frequency.
 
 1. frec_cb takes the data from the subscriber and changes the value of frecuency variable.
 
-'''
+```
 void frec_cb( const std_msgs::UInt16& cmd_msg){
-
-   frequency=cmd_msg.data; //set frequency   
-   
+   frequency=cmd_msg.data; //set frequency      
 }
-
 ros::Subscriber<std_msgs::UInt16> sub("frec", frec_cb);
-'''
+```
