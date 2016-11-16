@@ -12,6 +12,9 @@ void frec_cb( const std_msgs::UInt16& cmd_msg){
 ros::Subscriber<std_msgs::UInt16> sub("frec", frec_cb);
 ```
 ###How to run the sketch?
+Previous: Install your Arduino IDE and send the sketch to your Arduino board.
+http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
+
 1. Open a new terminal and write:
 ```
 $ roscore 
