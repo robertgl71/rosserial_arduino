@@ -12,8 +12,15 @@ void frec_cb( const std_msgs::UInt16& cmd_msg){
 ros::Subscriber<std_msgs::UInt16> sub("frec", frec_cb);
 ```
 ###How to run the sketch?
-1. roscore
-2. rosrun rosserial_python serial_node.py "serial port"  (ex.:/dev/ttyACM1)
+1. Open a new terminal and write
+```
+$ roscore 
+```
+2. Run the rosserial application to send Arduino messages to the rest of ROS. In a new terminal type
+```
+rosrun rosserial_python serial_node.py "serial port"  (ex.:/dev/ttyACM1) 
+```
+
 3. rqt_plot wave
 4. rostopic pub frec std_msgs/UInt16 "new value"
 
